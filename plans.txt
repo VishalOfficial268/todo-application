@@ -1,12 +1,12 @@
 setup the project directory ------------------ done
 setup the git ------------------ done 
 setup the server ------------------ done
-setup the db connection as local ------------------
-setup the files structre ------------------
-setup the constrollers ------------------
-setup the model schema ------------------
-setup the routes ------------------
-use the app as the combination of the route and controller ------------------
+setup the db connection as local ------------------ done
+setup the files structre ------------------ done
+setup the constrollers ------------------ done
+setup the model schema ------------------ done 
+setup the routes ------------------ done
+use the app as the combination of the route and controller ------------------ done
 set up the middlewares ------------------
 call as auth middlewares ------------------
 test the apis with postman ------------------
