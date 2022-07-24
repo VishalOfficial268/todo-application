@@ -7,11 +7,11 @@ setup the constrollers ------------------ done
 setup the model schema ------------------ done 
 setup the routes ------------------ done
 use the app as the combination of the route and controller ------------------ done
-set up the middlewares ------------------
-call as auth middlewares ------------------
-test the apis with postman ------------------
-check the files comments and unneccessary logs ------------------
-collect the api collection tests ------------------
-wrap the collection in the json files ------------------
+set up the middlewares ------------------ done
+call as auth middlewares ------------------ done
+test the apis with postman ------------------ in progess  --> done
+check the files comments and unneccessary logs ------------------ done
+collect the api collection tests ------------------ in progress --> done
+wrap the collection in the json files ------------------ Collection created
 
 

@@ -1,7 +1,9 @@
 const UserModel = require('../model/User');
+const dotenv = require('dotenv');
+
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const SECRET_KEY = process.env.SECRET_KEY;
+SECRET_KEY = "sshhh!!itssecretofvishal###lol"
 
 const signup = async (req, res, next) => {
     const body = req.body;
