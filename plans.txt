@@ -1,0 +1,17 @@
+setup the project directory ------------------ done
+setup the git ------------------ done 
+setup the server ------------------ done
+setup the db connection as local ------------------
+setup the files structre ------------------
+setup the constrollers ------------------
+setup the model schema ------------------
+setup the routes ------------------
+use the app as the combination of the route and controller ------------------
+set up the middlewares ------------------
+call as auth middlewares ------------------
+test the apis with postman ------------------
+check the files comments and unneccessary logs ------------------
+collect the api collection tests ------------------
+wrap the collection in the json files ------------------
+
+
