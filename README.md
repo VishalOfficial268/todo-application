@@ -1,8 +1,8 @@
-# todo-app
+# Todo-Application
 Todo Application based jwt token authentications.
 
 
-# project-setup
+# Project-Setup
 For the configuration level follow the following steps:
 1. clone the repo in your local machine.
 2. For the local port I have give as PORT
@@ -14,3 +14,7 @@ For the configuration level follow the following steps:
 8. for user api -> localhost:3000/api/user/
 9. for todo api -> localhost:3000/api/todo/
 10. for more details please check the routes. ||| Thanks
+
+
+# Postman
+Note: For the postman collection, the imported collection has been added in "Postman" folder and it is just only for the test.

@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "1c3eff68-9ce9-4862-bddb-4b56f50843d8",
+		"name": "todo-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15924849"
+	},
+	"item": [
+		{
+			"name": "add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"King Barathean\",\n    \"email\": \"king.barathean@gmail.com\",\n    \"password\": \"GameOfthones@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"king.barathean@gmail.com\",\n    \"password\": \"GameOfthones@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZGQ5MjJlYTJlZWEyMzIwZjVkMDIzOCIsImVtYWlsIjoia2luZy5iYXJhdGhlYW5AZ21haWwuY29tIiwiaWF0IjoxNjU4Njg4MTQxfQ.SX2nFYd06mP3v8de9wAQYIgfWGayYpf_PgY5g48AElo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"todoname\": \"Submit the code after the test apis\",\n    \"description\": \"Just the daily catchup.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/todo/add-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todo",
+						"add-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-todo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZGQ5MjJlYTJlZWEyMzIwZjVkMDIzOCIsImVtYWlsIjoia2luZy5iYXJhdGhlYW5AZ21haWwuY29tIiwiaWF0IjoxNjU4Njg4MTQxfQ.SX2nFYd06mP3v8de9wAQYIgfWGayYpf_PgY5g48AElo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/todo/get-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todo",
+						"get-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-todo-by-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZGQ5MjJlYTJlZWEyMzIwZjVkMDIzOCIsImVtYWlsIjoia2luZy5iYXJhdGhlYW5AZ21haWwuY29tIiwiaWF0IjoxNjU4Njg4MTQxfQ.SX2nFYd06mP3v8de9wAQYIgfWGayYpf_PgY5g48AElo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/todo/get-todo/62dd92e9a2eea2320f5d023f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todo",
+						"get-todo",
+						"62dd92e9a2eea2320f5d023f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-todo-by-id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZGQ5MjJlYTJlZWEyMzIwZjVkMDIzOCIsImVtYWlsIjoia2luZy5iYXJhdGhlYW5AZ21haWwuY29tIiwiaWF0IjoxNjU4Njg4MTQxfQ.SX2nFYd06mP3v8de9wAQYIgfWGayYpf_PgY5g48AElo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"todoname\": \"Just Testing for the final submission.\",\n    \"description\": \"Awesome codings.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/todo/update-todo/62dd92e9a2eea2320f5d023f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todo",
+						"update-todo",
+						"62dd92e9a2eea2320f5d023f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-todo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZGQ5MjJlYTJlZWEyMzIwZjVkMDIzOCIsImVtYWlsIjoia2luZy5iYXJhdGhlYW5AZ21haWwuY29tIiwiaWF0IjoxNjU4Njg4MTc0fQ.hQRNS8eWa1LaJE8DiTJEjCten0Dj4seOYt2q1x0K-gE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/todo/delete-todo/62dd92e9a2eea2320f5d023f?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"todo",
+						"delete-todo",
+						"62dd92e9a2eea2320f5d023f"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
